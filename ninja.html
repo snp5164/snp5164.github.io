@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>tyler blevins dot fortnite</title>
-<meta property="og:image" content="https://catboy.sex/misc/tyler.jpg">
-<meta property="og:type" content="video.other">
-<meta property="og:video:url" content="https://catboy.sex/misc/vid/ninja.webm" />
-<meta property="og:video:type" content="video/webm"/>
-<meta property="og:video:height" content="220">
-<meta property="og:video:width" content="356">
-<style>
-body {
-  background-image: url('misc/img/tyler.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-h1 {
-  text-shadow: 0 0 5px #ffffff;
-}
-a {
-	text-shadow: 0 0 5px #000000;
-}
-audio {
-  outline-style: dotted;
-}
-</style> 
+  <title>tyler blevins dot fortnite</title>
+  <meta property="og:image" content="https://catboy.sex/misc/tyler.jpg">
+  <meta property="og:type" content="video.other">
+  <meta property="og:video:url" content="https://catboy.sex/misc/vid/ninja.webm" />
+  <meta property="og:video:type" content="video/webm"/>
+  <meta property="og:video:height" content="220">
+  <meta property="og:video:width" content="356">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+      background-image: url('misc/img/tyler.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      }
+    h1 { font-family: 'Roboto', sans-serif; font-size: 48px; }
+    h1 { text-shadow: 0 0 5px #ffffff; }
+    a { text-shadow: 0 0 5px #000000; }
+  </style> 
 </head>
-<body style="height: 100vh; overflow: hidden;">
-<audio controls autoplay loop>
-<source src="misc/aud/fortnite.ogg" type="audio/ogg">
-you didn't have shockwaves to finish the job
-</audio>
-<h1>TYLER MOTHERFUCKING <a href=https://catboy.sex/misc/vid/ninja.webm>NINJA</a> BLEVINS</h1>
+
+<body>
+  <h1>TYLER MOTHERFUCKING <a href=https://catboy.sex/misc/vid/ninja.webm>NINJA</a> BLEVINS</h1>
+  <button id="music-button" onclick="this.style.display='none';document.querySelector('audio').play()">click for immersive mode (plays music)</button>
+  <audio src="misc/aud/fortnite.ogg"></audio>
+  <br></br>
+  <form id="fortnite-form" style="display:none" action="com.epicgames.launcher://">
+    <input type="submit" value="open epic games launcher"/>
+  </form>
+  <script>
+    if (navigator.userAgent.includes('Windows')) { document.getElementById('fortnite-form').style.display = 'block'; }
+  </script>
 </body>
 </html>

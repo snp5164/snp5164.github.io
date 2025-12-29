@@ -1,21 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-<title>uh oh</title>
-    <style>
+    <meta charset="utf-8"/>
+    <title>uh oh</title>
+    <style type="text/css">
+        body {
+            cursor: url('https://files.catbox.moe/3lttep.png'), auto;
+            background-image: url('misc/img/glac_background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            }
         div { text-align: center; margin-top: 50px; }
         p { font-family: Arial, sans-serif; font-size: 18px; color: #72b4f1; }
-        img { margin-top: 20px; }
+        .blur-box {
+            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.65);
+            padding: 50px;
+            margin: 25px auto;
+            max-width: 1000px;
+            height: 100%;
+            border-radius: 20px;
+            }
     </style>
 </head>
 
 <body>
-<div>
+<div class="blur-box">
     <p>whoops, you got 404'd. what a shame. make sure the link you're trying to visit actually exists, you know</p>
-    <img id="random-image" width="471" height="471" alt="random glaceon"/>
+    <img id="random-glac" width="471" height="471" alt="random glaceon"/>
 </div>
-
     <script>
-    (function(){
         const images = [
             "https://archives.bulbagarden.net/media/upload/a/a9/471Glaceon_Dream.png",
             "https://archives.bulbagarden.net/media/upload/2/24/471Glaceon_Dream_2.png",
@@ -24,15 +41,7 @@
             "https://archives.bulbagarden.net/media/upload/f/f6/471Glaceon_Dream_5.png",
             "https://archives.bulbagarden.net/media/upload/1/1b/471Glaceon_WF.png"
         ];
-
-        function pickRandom() {
-            const img = document.getElementById('random-image');
-            if (!img) return;
-            img.src = images[Math.floor(Math.random() * images.length)];
-        }
-
-        window.addEventListener('DOMContentLoaded', pickRandom);
-    })();
+        document.getElementById('random-glac').src = images[Math.floor(Math.random() * images.length)];
     </script>
 </body>
 </html>
