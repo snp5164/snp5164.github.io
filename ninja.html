@@ -24,12 +24,13 @@
 <body>
   <h1>TYLER MOTHERFUCKING <a href=https://catboy.sex/misc/vid/ninja.webm>NINJA</a> BLEVINS</h1>
   <button id="music-button" onclick="this.style.display='none';document.querySelector('audio').play()">click for immersive mode (plays music)</button>
-  <audio src="misc/aud/fortnite.ogg"></audio>
+  <audio id="fortnite" src="misc/aud/fortnite.ogg"></audio>
   <br></br>
   <form id="fortnite-form" style="display:none" action="com.epicgames.launcher://">
     <input type="submit" value="open epic games launcher"/>
   </form>
   <script>
+    document.getElementById("fortnite").loop = true; 
     if (navigator.userAgent.includes('Windows')) { document.getElementById('fortnite-form').style.display = 'block'; }
   </script>
 </body>
