@@ -9,6 +9,53 @@
     <meta content="https://catboy.sex/misc/img/yeah.jpg" property="og:image">
     <meta content="#72b4f1" data-react-helmet="true" name="theme-color">
     <link rel="stylesheet" href="index.css">
+    <style>
+      #form {
+        background: rgba(0, 0, 0, 0.35);
+        padding: 50px;
+        margin: 25px auto;
+        max-width: 1000px;
+        height: 100%;
+        border-radius: 20px;
+      }
+
+      #form input:hover, #form textarea:hover {
+        outline: 1px solid #0085ff;
+      }
+
+      #form input:focus, #form textarea:focus {
+        outline: 2px solid #0085ff;
+      }
+
+      #form input, #form textarea {
+        outline: 2px solid #0085ff;
+        backdrop-filter: blur(2px);
+        background: rgba(185, 219, 248, 0.85);
+        color: #0063bf;
+        border: 0;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      #form textarea {
+        resize: none;
+        width: 100%;
+        height: 5em;
+        text-align: left;
+      }
+
+      #form input::placeholder, #form textarea::placeholder, #form input[type=submit] {
+        color: #0063bf;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      #form textarea::placeholder {
+        line-height: calc(5em - 5px);
+      }
+    </style>
 </head>
 
 <div class="blur-box">
